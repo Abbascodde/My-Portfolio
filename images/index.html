@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/55bfc28386.js" crossorigin="anonymous"></script>
+    <!-- <script src="https://kit.fontawesome.com/36345ff417.js" crossorigin="anonymous"></script> -->
+</head>
+<body>
+
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/cover.png" alt="">
+                <ul id="sidemenu">
+                    <li><i class="fa-solid fa-house-chimney"></i><a href="#header">Home</a></li>
+                    <li><i class="fa-solid fa-address-card"></i><a href="#about">About</a></li>
+                    <li><i class="fa-brands fa-servicestack"></i><a href="#services">Services</a></li>
+                    <li><i class="fa-solid fa-bag-shopping"></i><a href="#portfolio">Portfolio</a></li>
+                    <li><i class="fa-solid fa-phone"></i><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+                
+            </nav>
+
+            <img src="images/img_567.jpeg" class="my-img">
+
+            <div class="header-text">
+                <p>Frontend Developer</p>
+                <h1> I'm <span>Abbas</span><br>Taofeeq Olakunle</h1>
+            </div>
+         </div>
+    </div>
+<!-- -----ABOUT------ -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="img_789.png" alt="">
+                </div>
+
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>A Newbee To Tech</p>
+
+                    <div class="tab-title">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-content active-tab" id="skills">
+                        <ul>
+                            <li><span>Biginner</span><br></li>
+                            <li><span>Web Devlopment</span><br></li>
+                            <li><span></span><br></li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-content" id="experience">
+                        <ul>
+                            <li><span>2023 - current</span><br>Student at TIIDELab Prefellowshiop 3.0</li>
+                            <li><span>2023 - current</span><br>Assistant team lead group 5 Erudite Developer</li>
+                            <li><span></span><br> </li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-content" id="education">
+                        <ul>
+                            <li><span>2019</span><br>SSCE Certificate</li>
+                            <li><span>2022</span><br> NCE.Under Graduate </li>
+                            <li><span>2023</span><br>Currently at Tiidela Prefellowshiop</li>
+                        </ul>
+                    </div>
+                </div> 
+            </div>
+        </div>
+    </div>
+    <!-- -----------------------------Services---------------------- -->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list"> 
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h2>CAC consultant</h2>
+                    <p> we can you your cac certificate today.</p>
+                </div>
+                <div>
+                    <i class="fas fa-crop-alt"></i>
+                    <h2>Vehicle Rgistration</h2>
+                    <p> Get your plate number within 24hrs.</p>
+                </div>
+                <div>
+                    <i class="fab fa-app-store"></i>
+                    <h2>Newbee to tech</h2>
+                    <p>currently at Tiidelab.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!----Portfolio----- -->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/Screenshot (45).png" alt="">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/group2.jpeg" alt="">
+                    <div class="layer">
+                        <!-- <h3>Music App</h3>
+                        <p>The app connects you to the talented people around the world. Download it from play store.</p> -->
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/Screenshot (7).png" alt="">
+                    <div class="layer">
+                        <!-- <h3>Online Shopping App</h3>
+                        <p>The app connects you to the talented people around the world. Download it from play store.</p> -->
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+    <!---contact------- -->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-paper-plane"></i>abbasyim1@gmail.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i>+234 9028592933</p>
+                    <div class="social-icons">
+                        <a href=""><i class="fab fa-facebook"></i></a>
+                        <a href="https://twitter.com/mayortaofeq"><i class="fab fa-twitter-square"></i></a>
+                        <a href="https://www.instagram.com/abbastaofeeq_123/"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/abbas-taofeeq-olakunle1/"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form action="">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your email" required>
+                        <textarea name="Message"  rows="6" placeholder="your message"></textarea>
+                        <button type="submit" class="btn btn2" > Submit</button>
+                    </form>
+                    <!-- <span id="msg">Hello</span> -->
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright &copy;ABS.TTECH <a href=""><i class="fas fa-heart"></i></a> @Taofeeq </p>
+        </div>
+    </div>
+
+  
+    
+ 
+    <script>
+        var tablinks = document.getElementsByClassName('tab-links');
+        var tabcontents = document.getElementsByClassName('tab-content');
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+
+    
+</body> 
+</html>
